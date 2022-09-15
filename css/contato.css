@@ -1,0 +1,81 @@
+footer {
+  background: #000000;
+}
+
+.contato-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 10rem 1.25rem;
+  padding-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3.165rem;
+  color: #fff;
+  position: relative;
+}
+
+.contato-container p {
+  display: grid;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+  margin-bottom: 5rem;
+  align-content: center;
+  height: 300px;
+}
+
+.contato-lista {
+  text-align: center;
+}
+
+.contato-lista li {
+  padding: 15px;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.contato-direitos {
+  margin-top: 3.125rem;
+  color: #8f8f8f;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  grid-column: 1/-1;
+}
+
+@media (max-width: 900px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+    padding: 40px;
+    gap: 1.5rem;
+  }
+  .contato-container p {
+    margin-bottom: 0px;
+    height: 100px;
+    max-width: 60ch;
+  }
+  .contato-lista {
+    text-align: left;
+  }
+}
+
+@media (max-width: 490px) {
+  .contato-container {
+    padding: 50px 30px;
+    gap: 0.7rem;
+  }
+  .contato-container p {
+    padding-top: 50px;
+  }
+  .contato-lista {
+    padding: 60px 20px;
+    align-self: start;
+  }
+  .contato-lista li {
+    font-size: 1.5rem;
+    /* padding:0px; */
+    padding-bottom: 20px;
+  }
+  .contato-direitos {
+    font-size: 0.9rem;
+  }
+}
